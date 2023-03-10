@@ -1,17 +1,17 @@
-const { ApolloServer }  = require('apollo-server');
-const mongoose = require('mongoose');
+import { ApolloServer } from 'apollo-server';
+import { connect } from 'mongoose';
 
-const typeDefs = require('./graphql/typeDefs');
-const resolvers = require('./graphql/resolvers');
+import typeDefs from './graphql/typeDefs.js';
+import resolvers from './graphql/resolvers/UserResolver.js';
 
-const MONGODB = "mongodb+srv://admin:coopercodes@apolloserversetup.n9ghj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const MONGODB = "mongodb+srv://admin:1234@cluster0.g6idydk.mongodb.net/Booking";
 
 const server = new ApolloServer({
     typeDefs,
     resolvers
 });
 
-mongoose.connect(MONGODB, {useNewUrlParser: true})
+connect(MONGODB, {useNewUrlParser: true})
     .then(() => {
         console.log("MongoDB Connected");
         return server.listen({port: 5000});

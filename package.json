@@ -1,18 +1,22 @@
 {
   "name": "apolloserversetupvideo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A basic implementation to set up Apollo Server with GraphQL and connect it to MongoDB Atlas",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^3.5.0",
-    "graphql": "^15.7.2",
-    "mongoose": "^6.0.14",
-    "nodemon": "^2.0.15"
+    "apollo-server": "^3.12.0",
+    "apollo-server-errors": "^3.3.1",
+    "bcrypt": "^5.1.0",
+    "graphql": "^15.8.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.10.2",
+    "nodemon": "^2.0.21"
   }
 }

@@ -1,0 +1,53 @@
+.lContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #000000;
+  margin-bottom: 5px;
+  padding: 25px;
+  width: 30%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+body {
+  background: #e8f1e8;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.form {
+  max-width: 330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.form .form__custom-button {
+  margin-top: 50px;
+}
+
+.lButton {
+  background-color: #29a329;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
